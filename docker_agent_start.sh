@@ -19,7 +19,7 @@ echo "Sleeping"
 sleep 3
 echo "Waking"
 
-/infa/infaagent/apps/agentcore/consoleAgentManager.sh configure $1 $2 | grep -q fails && exit 2
+/infa/infaagent/apps/agentcore/consoleAgentManager.sh configureToken $1 $2 
 echo "Wait"
 
 wait
