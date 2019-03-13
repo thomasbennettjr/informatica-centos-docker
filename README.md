@@ -6,12 +6,12 @@ Script to create Docker image with CentOS and Informatica Cloud Secure Agent
   Checkout all the file from this repository and execute the below docker commands
   1. docker build -t unico/centosinfa .
   2. docker images
-  3. docker run --cpus [#_CPUS] --name [DOCKER_RUN_NAME] -h [HOST_NAME] [DOCKER_IMAGE_NAME] [INFA USERNAME] [INFA PASSWORD]
-# Step #3
+  3. docker run --cpus [#_CPUS] --name [DOCKER_RUN_NAME] -h [HOST_NAME] [DOCKER_IMAGE_NAME] [INFA USERNAME] [TOKEN]
+# Step #2
   Execute the below command to access running container
   1. docker ps
   1. docker exec -it [CONTAINER_ID] /bin/bash
-# Step #4
+# Step #3
   Execute the below commands to stop and remove the container
   1. docker ps --all
   2. docker container stop [CONTAINER_ID]
